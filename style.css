@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing:border-box ;
+}
+h1{
+    text-align: center;
+    margin: 0;
+    margin-bottom: 30px;
+
+}
+h2{
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+.wrapper{
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    padding:0 20px ;
+    padding-top: 130px;
+    background-image: url('./images/paper.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.container{
+    width: 400px;
+    font-weight: 700;
+    max-width: 100%;
+    font-size: 24px;
+
+    height: 300px;
+    margin: auto;
+    padding: 20px 10px;
+}
+.labels{
+    font-size: 24px;
+    margin-right: 20px;
+}
+.question{
+    width: 100%;
+    max-width: 100%;
+}
+.button__wrapper{
+    width: 300px;
+    max-width: 100%;
+    display: none;
+    justify-content: space-between;
+    margin: auto;
+    align-items: center;
+}
+.next{
+    background-color:#362222;
+    padding: 10px 25px;
+    border: none;
+    display: block;
+    color: #876445;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 10px;
+}
+.prev{
+    background-color: #362222;
+    padding: 10px 25px;
+    border: none;
+    display: block;
+    color:#876445;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+}
+.count{
+    background-color: transparent;
+    padding: 10px 25px;
+    font-size: 32px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 900;
+    border: none;
+    display: block;
+    color:#7E370C;
+    border-radius: 10px;
+}
+#start{
+    background-color: #171010;
+    padding: 10px 25px;
+    border: none;
+    display: none;
+    color:#fff;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    animation-name: startBtn;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    margin: auto;
+}
+.answers{
+    transform: scale(2);
+    margin-right: 15px;
+}
+#finish{
+    background-color: #171010;
+    padding: 10px 25px;
+    border: none;
+    display: none;
+    color:#fff;
+    font-size: 20px;
+    border-radius: 10px;
+    font-weight: 700;
+    animation-name: startBtn;
+    animation-duration: 5s;
+    animation-timing-function: ease;
+    animation-iteration-count: infinite;
+    margin: auto;
+}
+@keyframes startBtn {
+    50%{
+        box-shadow: 0, 0, 10px, 10px, #000 ;
+    }
+    100%{
+        box-shadow: 0, 0,  0, 0, #000 ;
+    }
+}
+.active{
+    display: flex;
+}
+.timer{
+    display: block;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 30px;
+    font-weight: 900;
+}
+.disabled{
+    color:#362222;
+    background-color: #876445 ;
+}
+@media screen and (max-width:500px) {
+    .wrapper{
+        padding-top: 80px;
+    }
+    
+}
+
+.startActive{
+    display: block !important;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   <div class="wrapper">
+    <h1>Matematiklar uchun Test</h1>
+    <span class="timer"></span>
+    <button id="start">Start test</button>
+   <div class="button__wrapper">
+    <button class="prev">prev</button>
+    <span class="count"></span>
+    <button class="next">next</button>
+   </div>
+    <div class="container">
+    </div> 
+ 
+    <button id="finish">Finish</button>
+    
+ 
+ 
+   </div>
+ 
+ 
+    <template id="templ">
+    <h2 class="question"></h2>
+    <input type="radio" name="ans" id="a" class="answers"><label for="a" class="labels">123</label>
+    <input type="radio" name="ans" id="b" class="answers"><label for="b" class="labels">234</label>
+    <input type="radio" name="ans" id="c" class="answers"><label for="c" class="labels">345</label></template>
+
+    <script type="module" src="./app.js"></script>
+</body>
+</html>
